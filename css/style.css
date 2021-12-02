@@ -7829,7 +7829,7 @@ h1, h2, h3, h4, h5,
       background: -ms-linear-gradient(-45deg, #2f89fc 0%, #2cbcbc 100%);
       background: -webkit-linear-gradient(315deg, #2f89fc 0%, #2cbcbc 100%);
       background: -o-linear-gradient(315deg, #2f89fc 0%, #2cbcbc 100%);
-      background: linear-gradient(135deg, #2f89fc 0%, #2cbcbc 100%);
+      background: linear-gradient(135deg, #217f88 0%, #2cbcbc 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f89fc', endColorstr='#00dc94', GradientType=1 );
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -8028,6 +8028,21 @@ h1, h2, h3, h4, h5,
     -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5);
     box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5); }
+    .staff .text p{
+      font-size: 0.9rem;
+    }
+
+    .text-color {
+      color: #fff
+  }
+  
+  .carousel-item img {
+      height: 400px
+  }
+
+  .principal .hemo{
+    background: linear-gradient(135deg, #000 0%, #217f88 100%);
+  }
 
 @media (min-width: 768px) {
   .block-3 {
@@ -9380,3 +9395,163 @@ h1 div:first-child {
 background: #707070;
 margin-bottom:10px;
 }
+
+
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+/* Whastsapp */
+/* * {
+  margin: 0;
+  padding: 0
+}
+
+body {
+  height: 100vh;
+  background-color: #ccc;
+  position: relative
+} */
+
+.wrapper-sapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  
+}
+
+.wrapper-sapp a:nth-child(1) {
+  background-color: green;
+}
+
+.wrapper-sapp a:nth-child(2) {
+  background-color: blue
+}
+
+.wrapper-sapp a:nth-child(3) {
+  animation: 0.7s ease-out 0s 1 FadeIn;
+  transition: all 0.3s
+}
+
+.wrapper-sapp a:hover:nth-child(3) {
+  background-color: red
+}
+
+@keyframes FadeIn {
+  0% {
+      transform: rotate(0deg)
+  }
+
+  100% {
+      transform: rotate(360deg)
+  }
+}
+
+.hide {
+  position: absolute;
+  bottom: 0px !important;
+  z-index: -1;
+  transition: all 2s
+}
+
+.social {}
+
+.wrapper-sapp a {
+  height: 30px;
+  width: 30px;
+  background: #000;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 2px
+}
+
+
+
+.exames h2{
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.exames .carousel-caption{
+  background-color: rgba(0, 0, 0, 0.49)
+}
+
+.exames h3{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.space .container-fluid {
+  width: 800px;
+   height: 600px; 
+   margin-bottom: 60px;
+  margin-top: -60px
+
+}
+
+.space .container-fluid p{
+color: #fff;
+
+}
+.space h4{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+.space .carousel-item  {
+  width: 800px;
+    height: 550px
+  }
+
+.space .carousel-item img {
+width: 800px;
+  height:  550px
+} 
+.space .carousel-caption{
+  background-color: rgba(0, 0, 0, 0.4)
+}
+
+
+
+
+
+
+
+
+/* ------------------ */
+

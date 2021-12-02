@@ -1,0 +1,38 @@
+AYAMED WEB
+-WhatsApp + Seta para Subir/Início
+
+	1.	Início - Tab para conteúdos a ser updated semanalmente ou a cada 15 dias + Agendar Consulta + Contactos
+
+	2.	Sobre Nós (clinica)
+Quem Somos?
+-Política de Qualidade
+-Missão
+-Visão
+-Valores
+============================================
+
+	3.	Hemodiálise (Layout imagem com texto e Funcionalidades - drop-list com ícones)
+
+	4.	Consultas - Com os melhores profissionais e vasta experiência na área de saúde, formados em Cuba, Rússia e Portugal
+----------------
+   -Nefrologia
+   -Clínica geral
+   -Pediatria
+   -Ginecologia e Obstetrícia
+   -Urulogia (Pode excluir)
+   -Dermatologia
+   -Psicologia e Psiquiatria
+  
+--------------------
+-Colocar os remanescentes com icons pequenos ou lista
+   
+	5.	Exames - Com equipamento da mais alta tecnologia para melhor garantir a fiabilidade dos seus resultados, incluindo análises feitas em laboratórios parceiros de parceiros locais e em Portugal >> Imagens
+
+	6.	Instalações:
+	⁃	Parqueamento
+	⁃	Café AYAmed
+	⁃	Recepção
+	⁃	Consultórios
+	⁃	Staff (Opcional)
+
+Footer: Horário e Contactos

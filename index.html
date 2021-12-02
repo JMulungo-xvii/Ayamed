@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -32,6 +33,19 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!------ Include the above in your HEAD tag ---------->
 
+
+
+
+
+	<!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+	<!-- <link rel="stylesheet" type="text/css" href="cards.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> -->
+
   </head>
   <body>
     
@@ -43,13 +57,14 @@
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Início</a></li>
-	          <li class="nav-item"><a href="" class="nav-link">Clínica</a></li>
-	          <li class="nav-item"><a href="" class="nav-link">Serviços</a></li>
-	          <li class="nav-item"><a href="" class="nav-link">Médicos</a></li>
-	          <li class="nav-item"><a href="" class="nav-link">Noticias</a></li>
-	          <li class="nav-item"><a href="" class="nav-link">Contactos</a></li>
+	        <ul class="navbar-nav ml-auto inline-list">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+	          <li class="nav-item"><a href="#sobre" class="nav-link">Clínica</a></li>
+	          <li class="nav-item"><a href="#hemodialise" class="nav-link">Hemodiálise</a></li>
+	          <li class="nav-item"><a href="#consultas" class="nav-link">Consultas</a></li>
+			  <li class="nav-item"><a href="#exames" class="nav-link">Exames</a></li>
+	          <li class="nav-item"><a href="#noticias" class="nav-link">Noticias</a></li>
+	          <li class="nav-item"><a href="#instalacoes" class="nav-link">Instalações</a></li>
 	          <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal" data-target="#modalRequest"><span>Agendar Consulta</span></a></li>
 	        </ul>
 	      </div>
@@ -88,30 +103,8 @@
     <section class="ftco-intro">
     	<div class="container">
     		<div class="row no-gutters">
-    			<div class="col-md-3 color-1 p-4">
-    				<h3 class="mb-4">Contactos</h3>
-    				<p></p>
-    			<p><span class="phone-number"></span>(+258) 84 988 8000 / 01 <br>	
-          <span class="phone-number"></span>(+258) 87 988 800 <br>
-            <span class="phone-number"></span>recepcao@ayamed.co.mz <br>
-            <span class="phone-number"></span>info@ayamed.co.mz</p>
-	</div>
-    			<div class="col-md-3 color-2 p-4">
-    				<h3 class="mb-4">Horários</h3>
-    				<p class="openinghours d-flex">
-    					<span>Segunda - Sexta</span>
-    					<span>08:00 - 20:00</span>
-    				</p>
-    				<p class="openinghours d-flex">
-    					<span>Sábado</span>
-    					<span>09:00 - 17:00</span>
-    				</p>
-    				<p class="openinghours d-flex">
-    					<span>Domingo</span>
-    					<span>10:00 - 16:00</span>
-    				</p>
-    			</div>
-    			<div class="col-md-6 color-3 p-4">
+
+				<div class="col-md-6 color-3 p-4">
     				<h3 class="mb-2">Agendar Consulta</h3>
     				<form action="#" class="appointment-form">
 	            <div class="row">
@@ -168,28 +161,64 @@
 	            </div>
 	          </form>
     			</div>
+
+    			
+
+    			<div class="col-md-3 color-2 p-4">
+    				<h3 class="mb-4">Horários</h3>
+    				<p class="openinghours d-flex">
+    					<span>Segunda - Sexta</span>
+    					<span>08:00 - 20:00</span>
+    				</p>
+    				<p class="openinghours d-flex">
+    					<span>Sábado</span>
+    					<span>09:00 - 17:00</span>
+    				</p>
+    				<p class="openinghours d-flex">
+    					<span>Domingo</span>
+    					<span>10:00 - 16:00</span>
+    				</p>
+    			</div>
+    			
+
+				<div class="col-md-3 color-1 p-4">
+					<h3 class="mb-4">Contactos</h3>
+					<p></p>
+				<p><span class="phone-number"></span>(+258) 84 988 8000 / 01 <br>	
+				<span class="phone-number"></span>(+258) 87 988 800 <br>
+				<span class="phone-number"></span>recepcao@ayamed.co.mz <br>
+				<span class="phone-number"></span>info@ayamed.co.mz</p>
+			</div>
+
     		</div>
     	</div>
     </section>
 
 
     <!-- about -->
-    <section class="ftco-section">
+    <section class="ftco-section" id="sobre">
     	<div class="container">
     		<div class="row d-md-flex">
-	    		<div class="col-md-6 ftco-animate img about-image order-md-last" style="background-image: url(images/Symbol_Square.png);">
+	    		<div class="col-md-4 ftco-animate img about-image order-md-last" style="background-image: url(images/Symbol_Square.png);">
 	    		</div>
-	    		<div class="col-md-6 ftco-animate pr-md-5 order-md-first">
+	    		<div class="col-md-8 ftco-animate pr-md-5 order-md-first">
 		    		<div class="row">
 		          <div class="col-md-12 nav-link-wrap mb-5">
 		            <div class="nav ftco-animate nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-		              <a class="nav-link active" id="v-pills-whatwedo-tab" data-toggle="pill" href="#v-pills-whatwedo" role="tab" aria-controls="v-pills-whatwedo" aria-selected="true">Bem-Vindo</a>
+		              <a class="nav-link active" id="v-pills-whatwedo-tab" data-toggle="pill" href="#v-pills-whatwedo" role="tab" aria-controls="v-pills-whatwedo" aria-selected="true">Quem Somos?</a>
 
-		              <a class="nav-link" id="v-pills-mission-tab" data-toggle="pill" href="#v-pills-mission" role="tab" aria-controls="v-pills-mission" aria-selected="false">Quem Somos?</a>
-<!-- 
-		              <a class="nav-link" id="v-pills-goal-tab" data-toggle="pill" href="#v-pills-goal" role="tab" aria-controls="v-pills-goal" aria-selected="false">Our goal</a> -->
+					  <a class="nav-link" id="v-pills-policy-tab" data-toggle="pill" href="#v-pills-policy" role="tab" aria-controls="v-pills-policy" aria-selected="false">Politica</a>
+
+		              <a class="nav-link" id="v-pills-mission-tab" data-toggle="pill" href="#v-pills-mission" role="tab" aria-controls="v-pills-mission" aria-selected="false">Missão</a>
+
+					  <a class="nav-link" id="v-pills-vision-tab" data-toggle="pill" href="#v-pills-vision" role="tab" aria-controls="v-pills-vision" aria-selected="false">Visão</a>
+
+		              <a class="nav-link" id="v-pills-goal-tab" data-toggle="pill" href="#v-pills-goal" role="tab" aria-controls="v-pills-goal" aria-selected="false">Valores</a>
+
+					  
+
 		            </div>
-		          </div>
+		          </div> 
 		          <div class="col-md-12 d-flex align-items-center">
 		            
 		            <div class="tab-content ftco-animate" id="v-pills-tabContent">
@@ -208,18 +237,48 @@
 
 		              <div class="tab-pane fade" id="v-pills-mission" role="tabpanel" aria-labelledby="v-pills-mission-tab">
 		                <div>
-			                <h2 class="mb-4">Quem Somos?</h2>
-                      <p>Somos mais do que um centro médico. Aliamos a proximidade e o rigor à mais inovadora tecnologia e à experiência de uma equipa constituída por profissionais qualificados. Diariamente, fazemos do cuidar da saúde o nosso maior objetivo e queremos que esta segurança faça parte do seu dia a dia e de toda a sua família. Estamos aqui para responder a qualquer necessidade de saúde com médicos especializados sempre disponíveis para si. Por isso, queremos conhecer quem são os nossos pacientes, procurando sempre dar-lhes o melhor quando precisam com toda a competência e profissionalismo.</p>
+			                <h2 class="mb-4">Missão</h2>
+                      <p>Excelência Clínica e Inovação na prestação de serviços de saúde be cuidados médicos, realizados por médicos devidademente habilitados num espaço com equipamento de alta tecnologia </p>
+
 				            </div>
 		              </div>
-<!-- 
+
+
+					  <div class="tab-pane fade" id="v-pills-vision" role="tabpanel" aria-labelledby="v-pills-vision-tab">
+		                <div>
+			            
+
+					  <h2 class="mb-4">Visão</h2>
+						<p>O Primeiro, mais Holístico e Inovador centro especializado en Hemodiálise em todo o país</p>
+				            </div>
+		              </div>
+
+
 		              <div class="tab-pane fade" id="v-pills-goal" role="tabpanel" aria-labelledby="v-pills-goal-tab">
 		                <div>
-			                <h2 class="mb-4">Help Our Customers Needs</h2>
-			              	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-			                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+			                <h2 class="mb-4">Valores</h2>
+			              	<p><strong>Inovação:</strong> Processo sinérgico e incrementavel da qualidade e eficiência na operação diária de todos os procedimentos clínicos, processos e colaboradores</p>
+			                <p><strong>Sinergia:</strong> trabalho em equipa para aprimorae e alcançar a devidada acreditaçao e referência médica para os demais utentes num único espaço.</p>
+							<p><strong>Diferenciação:</strong> equipa qualificada cometida e agil para garantir a promessa de qualidade, com o suporte de aparelhos de mais alta qualidade.</p>
+
+							<p><strong>competência:</strong> compremisso e responsalidade perante aos utentes, prioridade a centrecidade aos pacientes para as diversas áreas de especialidade médica oferecidas.</p>
 				            </div>
-		              </div> -->
+		              </div>
+
+
+
+					  <div class="tab-pane fade" id="v-pills-policy" role="tabpanel" aria-labelledby="v-pills-policy-tab">
+		                <div>
+			                <h2 class="mb-4">Politica de Qualidade</h2>
+			              <ul>
+							  <li>Garantir Alto Niveis de perfomance dos nossos serviços</li>
+							  <li>Satisfazer e exceder as necessidades e expetactivas dos nossos parceiros</li>
+							  <li>Honrar aos comprimissos dos nossos parceiros</li>
+							  <li>Cumprir aps prazos estabelecidos para os objectivos</li>
+							  <li>Continuamente melhorar a produtividade e sustentabilidade do nosso apparatus, equipa e serviços</li>
+						  </ul>
+				            </div>
+		              </div>
 		            </div>
 		          </div>
 		        </div>
@@ -230,86 +289,26 @@
 
     <!-- end about -->
   
-    <section class="ftco-section ftco-services">
+    <section class="ftco-section ftco-services" id="hemodialise">
+
+
       
       <div class="container-wrap mt-5">
       	<div class="row d-flex no-gutters">
-      		<div class="col-md-4 img-serv" style="background-image: url(images/pics/médico.jpeg);">
+      		<div class="col-md-4 img-serv" style="background-image: url(images/ESPAÇO/DSC_0104.JPG);">
       		</div>
       		<div class="col-md-8 d-flex">
       			<div class="about-wrap">
       				<div class="heading-section heading-section-white mb-5 ftco-animate">
-		            <h2 class="mb-2">As Nossas Especialidades</h2>
+		            <h2 class="mb-2">Hemodiálise</h2>
 		            <p>
-                  De pessoal qualificado a médicos especializados, a AYAmed possui inúmeras áreas de atendimento para servir cada uma das suas necessidades e garantir que estas sejam tratadas com a devida atenção e profissionalismo.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad deleniti quo nihil aspernatur odio, molestiae, accusantium dolor repellat corrupti optio? Quae error cumque, magnam esse cum saepe sequi tempore..
                   
                   </p>
                   <p>
-                    Veja abaixo as nossas especialidades médicas e conheça os seus objetivos, e como cada uma delas funciona.</p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique assumenda veritatis quia et minima pariatur explicabo.</p>
 		          </div>
-      				<div class="list-services d-flex ftco-animate">
-      					<div class="icon d-flex justify-content-center align-items-center">
-      						<span class="flaticon-anesthesia"></span>
-      					</div>
-      					<div class="text">
-	      					<h3>Cirurgia geral</h3>
-                 A Cirurgia geral é a área que se dedica ao diagnóstico e posteriormente ao tratamento, quer <b><i>(ler mais)</i></b> 
-      					</div>
-      				</div>
-      				<div class="list-services d-flex ftco-animate">
-      					<div class="icon d-flex justify-content-center align-items-center">
-                  <span class="flaticon-anesthesia"></span>
-      					</div>
-      					<div class="text">
-	      					<h3>Clínica Geral</h3>
-                  <p>A Clínica Geral faz parte dos cuidados primários da saúde e os seus médicos têm um <b><i>(ler mais)</i></b> 
-                  </p>
-      					</div>
-      				</div>
-      				<div class="">
-                <div class="list-services d-flex ftco-animate">
-                  <div class="icon d-flex justify-content-center align-items-center">
-                    <span class="flaticon-anesthesia"></span>
-                  </div>
-                  <div class="text">
-                    <h3>Coloproctologia</h3>
-                    <p>A coloproctologia é a área de actuação médica dedicada ao diagnóstico e tratamento, tanto clínico quanto <b><i>(ler mais)</i></b></p>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="list-services d-flex ftco-animate">
-                  <div class="icon d-flex justify-content-center align-items-center">
-                    <span class="flaticon-anesthesia"></span>
-                  </div>
-                  <div class="text">
-                    <h3>Medicina Interna</h3>
-                    <p>A medicina interna é considerada a “mãe” de todas as especialidades médicas, é a área que <b><i>(ler mais)</i></b> </p>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="list-services d-flex ftco-animate">
-                  <div class="icon d-flex justify-content-center align-items-center">
-                    <span class="flaticon-anesthesia"></span>
-                  </div>
-                  <div class="text">
-                    <h3>Gastrenterologia</h3>
-                    <p>A Gastrenterologia é uma especialidade da medicina que se focaliza na estrutura, função e doenças do <b><i>(ler mais)</i></b> </p>
-                  </div>
-                </div>
-              </div>
-              <div class="">
-                <div class="list-services d-flex ftco-animate">
-                  <div class="icon d-flex justify-content-center align-items-center">
-                    <span class="flaticon-anesthesia"></span>
-                  </div>
-                  <div class="text">
-                    <h3>Otorrinolaringologia</h3>
-                    <p>A área de otorrinolaringologia dedica-se ao diagnóstico, tratamento médico e cirúrgico das doenças dos ouvidos, nariz, <b><i>(ler mais)</i></b> .</p>
-                  </div>
-                </div>
-              </div>
+      			
       			</div>
       		</div>
       	</div>
@@ -317,12 +316,15 @@
     </section> 
      
 
-    <section class="ftco-section">
+
+
+
+    <section class="ftco-section" id="consultas">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2 class="mb-3">Nossa equipa Médica</h2>
-            <p>Conheça a nossa equipa médica</p>
+            <h2 class="mb-3">Consultas</h2>
+            <p>Com os melhores profissionais e vasta experiência na área de saúde, formados em Cuba, Rússia e Portugal</p>
           </div>
         </div>
         <div class="row">
@@ -330,16 +332,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/sorrindo-doutor-negro-com-papeis_23-2147767270.webp);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Nefrologia</a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
+	        				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
 	        				
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -348,16 +345,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/medico-duvidas2.webp);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Clínica geral</a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
-	        			
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
+	        				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
+	        				
 	        			</div>
       				</div>
 					
@@ -367,16 +359,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/depositphotos_81960438-stock-photo-portrait-of-young-female-doctor.jpeg);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Pediatria</a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
 	        				
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -385,16 +372,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/medico-negro-medica-negra-1605535211573_v2_1254x836.jpeg);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Ginecologia </a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
 	        				
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -403,16 +385,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/médico.jpeg);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Urulogia</a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
 	        				
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -421,16 +398,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/nero-male-doctor-foto.jpeg);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Dermatologia</a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
 	        				
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -439,16 +411,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/depositphotos_9501057-stock-photo-young-black-doctor-writing.jpeg);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Psicologia </a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
 	        				
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -457,16 +424,11 @@
         		<div class="staff">
       				<div class="img mb-4" style="background-image: url(images/pics/0\,\,21345849\,00.jpeg);"></div>
       				<div class="info text-center">
-						<h3><a href="">Abiba Cassamo</a></h3>
-						<span class="position">Genecologista</span>
+						<h3><a href="">Psiquiatria</a></h3>
+						<span class="position">Dra. Abiba Cassamo</span>
       					<div class="text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam, eos rerum consectetur.</p>
 	        				
-	        				<ul class="ftco-social">
-			              <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-			              <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-			              
-			            </ul>
 	        			</div>
       				</div>
         		</div>
@@ -474,19 +436,269 @@
         </div>
         <div class="row  mt-5 justify-conten-center">
         	<div class="col-md-8 ftco-animate">
-        		<p> Aliamos a proximidade e o rigor à mais inovadora tecnologia e à experiência de uma equipa constituída por profissionais qualificados.</p>
+				<p>Veja abaixo mais especialidades médicas</p>
         	</div>
         </div>
       </div>
+
+			<!-- more -->
+			<div class="container">
+			
+			  <div class="row">
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Medicina Ocupacional</h3>
+					 
+					</div>
+				  </div>      
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Otorinolaringologia</h3>
+					
+					</div>
+				  </div>    
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Medicina Interna</h3>
+					 
+					</div>
+				  </div>      
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Ortopedia</h3>
+					  
+					</div>
+				  </div>      
+				</div>
+	  
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Medicina de familía</h3>
+					 
+					</div>
+				  </div>      
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Terapia de fala</h3>
+					  
+					</div>
+				  </div>    
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Cardiologia</h3>
+					 
+					</div>
+				  </div>      
+				</div>
+				<div class="col-md-3 d-flex align-self-stretch ftco-animate">
+				  <div class="media block-6 services d-block text-center">
+					<div class="icon d-flex justify-content-center align-items-center">
+						  <span class="flaticon-anesthesia"></span>
+					</div>
+					<div class="media-body p-2 mt-3">
+					  <h3 class="heading">Dermatologia</h3>
+					 
+					</div>
+				  </div>      
+				</div>
+
+
+				<div class="row  mt-5 justify-conten-center">
+					<div class="col-md-8 ftco-animate">
+					
+						<p> Aliamos a proximidade e o rigor à mais inovadora tecnologia e à experiência de uma equipa constituída por profissionais qualificados.</p>
+					</div>
+				</div>
+			  </div>
+			</div>
+
+
+
     </section>
+
+	
+
+	<div class="py-5 exames" style="background-color:#21aebb;" id="exames" >
+		<div class="container principal">
+			<div class="row animate-in-down hemo">
+				<div class="p-4 col-md-6 align-self-center text-color">
+					<!-- <p class="m-0">Feel comfortable, and purchase items</p> -->
+					<h2>Exames</h2>
+					<p class="my-4">Com equipamento da mais alta tecnologia para melhor garantir a fiabilidade dos seus resultados, incluindo análises feitas em laboratórios parceiros de parceiros locais e em Portugal</p> <a href="#" class="btn mb-3 p-2 btn-light">Agendar exames</a>
+				</div>
+				<div class="p-0 col-md-6">
+					<div class="carousel slide" data-ride="carousel" id="carousel1">
+						<div class="carousel-inner" role="listbox">
+							<div class="carousel-item"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0957.JPG" alt="first slide">
+								<div class="carousel-caption">
+									<h3>Mamografia</h3>
+									
+								</div>
+							</div>
+							<div class="carousel-item"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0955.JPG" alt="first slide">
+								<div class="carousel-caption">
+									<h3>Laboratórios</h3>
+									<p>Bioquímica, Hematologia, Testagem de Covid- 19(RT-PCR) entre outros</p>
+								</div>
+							</div>
+							<div class="carousel-item"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0954.JPG" alt="first slide">
+								<div class="carousel-caption">
+									<h3>Radiografia</h3>
+									<p>Convencional & Ocupacional</p>
+								</div>
+							</div>
+							<div class="carousel-item"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0770.JPG" alt="first slide">
+								<div class="carousel-caption">
+									<h3>Ecologia</h3>
+									<p>3D & 4D</p>
+								</div>
+							</div>
+							<div class="carousel-item active"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0342.JPG" data-holder-rendered="true">
+								<div class="carousel-caption">
+									<h3>Coloscopia</h3>
+									<p>Digital</p>
+								</div>
+							</div>
+							<div class="carousel-item"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0957.JPG" data-holder-rendered="true">
+								<div class="carousel-caption">
+									<h3>Tympanometria</h3>
+									
+								</div>
+							</div>
+
+							<div class="carousel-item"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0955.JPG" data-holder-rendered="true">
+								<div class="carousel-caption">
+									<h3>Audiometria</h3>
+									
+								</div>
+							</div>
+							<div class="carousel-item"> <img class="d-block img-fluid w-100" src="images/ESPAÇO/DSC_0190.JPG" data-holder-rendered="true">
+								<div class="carousel-caption">
+									<h3>Espirometria</h3>
+									
+								</div>
+							</div>
+						</div> <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<section  class="ftco-section space" style="background-color: rgb(63, 147, 150);" id="instalacoes">
+
+		<div class="container-fluid">
+
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 text-center ftco-animate">
+				  <h2 class="mb-2" style="color: #fff !important;"> Nossas Instalações</h2>
+				  <p>Com equipamento da mais alta tecnologia para melhor garantir a fiabilidade dos seus resultados.</p>
+				</div>
+			  </div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="carousel slide" id="carousel-554496">
+						<ol class="carousel-indicators">
+							<li data-slide-to="0" data-target="#carousel-554496"> </li>
+							<li data-slide-to="1" data-target="#carousel-554496"> </li>
+							<li data-slide-to="2" data-target="#carousel-554496" class="active"> </li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item"> <img class="d-block w-100" alt="Carousel Bootstrap First" src="images/ESPAÇO/DSC_0280.JPG" />
+								<div class="carousel-caption">
+									<h4> Edificio - Parte Externa</h4>
+									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea pariatur reiciendis nisi tempore facilis at esse voluptatem minus vitae molestias in quos suscipit libero voluptate similique laborum. </p>
+								</div>
+							</div>
+
+
+							<div class="carousel-item"> <img class="d-block w-100" alt="Carousel Bootstrap First" src="images/ESPAÇO/DSC_0104.JPG" />
+								<div class="carousel-caption">
+									<h4> Rés do Chão - Recepção & Farmacia</h4>
+									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea pariatur reiciendis nisi tempore facilis at esse voluptatem minus vitae molestias in quos suscipit libero voluptate similique laborum. </p>
+								</div>
+							</div>
+
+							<div class="carousel-item"> <img class="d-block w-100" alt="Carousel Bootstrap First" src="images/ESPAÇO/DSC_0104.JPG" />
+								<div class="carousel-caption">
+									<h4> 1º Andar - Hemodiálise</h4>
+									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea pariatur reiciendis nisi tempore facilis at esse voluptatem minus vitae molestias in quos suscipit libero voluptate similique laborum. </p>
+								</div>
+							</div>
+
+							<div class="carousel-item"> <img class="d-block w-100" alt="Carousel Bootstrap First" src="images/ESPAÇO/DSC_0140.JPG" />
+								<div class="carousel-caption">
+									<h4> 2º Andar - Consultas, Pediatria & Laboratório </h4>
+									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea pariatur reiciendis nisi tempore facilis at esse voluptatem minus vitae molestias in quos suscipit libero voluptate similique laborum. </p>
+								</div>
+							</div>
+
+							<div class="carousel-item"> <img class="d-block w-100" alt="Carousel Bootstrap Second" src="images/ESPAÇO/DSC_0600.JPG" />
+								<div class="carousel-caption">
+									<h4> Parque</h4>
+									<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea pariatur reiciendis nisi tempore facilis at esse voluptatem minus vitae molestias in quos suscipit libero voluptate similique laborum. </p>
+								</div>
+							</div>
+							<div class="carousel-item active"> <img class="d-block w-100" alt="Carousel Bootstrap Third" src="images/ESPAÇO/DSC_0052.JPG" />
+								<div class="carousel-caption">
+									<h4> Exemplo</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea pariatur reiciendis nisi tempore facilis at esse voluptatem minus vitae molestias in quos suscipit libero voluptate similique laborum. </p>
+								</div>
+							</div>
+						</div> <a class="carousel-control-prev" href="#carousel-554496" data-slide="prev"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" href="#carousel-554496" data-slide="next"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
 
 
    
-          
+        
+    
 		
-	
 
-    <section class="ftco-section" style="background-color: cadetblue;">
+	  
+
+
+
+    <section class="ftco-section" style="background-color: cadetblue;" id="noticias">
       <div class="container">
         <div class="row justify-content-center mb-5 pb-3">
           <div class="col-md-7 text-center ftco-animate">
@@ -572,8 +784,13 @@
 		  </div>
 		</div>
 	</section>
+
+
 	
-   
+
+	
+	<div class="wrapper-sapp"> <a class="social" href="#"><i class="fa fa-whatsapp"></i></a> <a class="social" href="#"> <i class="fa fa-phone"></i></a> <a class="close-button" href="#"> <i class="fa fa-close"></i></a>
+	</div>
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
@@ -581,7 +798,7 @@
           <div class="col-md-6">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2"><img src="images/ayamed-logo-200.png" alt=""></h2>
-              <p>Somos mais do que um centro médico. Aliamos a proximidade e o rigor à mais inovadora tecnologia e à experiência de uma equipa constituída por profissionais qualificados..</p>
+              <p>Somos mais do que um centro médico. Aliamos a proximidade e o rigor à mais inovadora tecnologia e à experiência de uma equipa constituída por profissionais qualificados.</p>
             </div>
             <ul class="ftco-footer-social list-unstyled float-md-left float-lft ">
               <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -686,6 +903,12 @@
   </div>
 
 
+
+
+  
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/popper.min.js"></script>
@@ -703,6 +926,29 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="cards.js"></script>
+<!--=======Scripts======-->
+<script src="jquery-3.1.1.min.js"></script>
+<script name="toggle-grid" type="text/javascript">
+$(document).ready(function(){
+  $(document).on("keypress", function(event) {
+    // If 'alt + g' keys are pressed:
+    if (event.which === 169){
+        $('#toggle-grid').toggle();
+     }
+  });
+
+  $('#toggle-grid').on("click"
+  , function() {
+      $('.pixel-grid').toggle();
+      $('#toggle-grid').toggleClass('orange');
+    });
+});
+</script>
     
   </body>
 </html>

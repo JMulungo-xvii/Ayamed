@@ -286,3 +286,178 @@
 
 })(jQuery);
 
+
+//Initialize Swiper
+
+var swiper = new Swiper(".mySwiper", {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	slidesPerGroup: 3,
+	loop: true,
+	loopFillGroupWithBlank: true,
+	pagination: {
+	  el: ".swiper-pagination",
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: ".swiper-button-next",
+	  prevEl: ".swiper-button-prev",
+	},
+  });
+
+
+
+
+
+
+  
+//   scrollTo
+
+var clientname = {};
+
+clientname.website = (function () {
+
+    var scrollToTarget = function (targetElement) {
+        
+        var $elementTop = $(targetElement).offset().top;
+        
+        $('html, body').animate({
+          scrollTop: $elementTop
+        }, 1000);
+        
+        return false;
+        
+        
+    };
+    
+    
+    var sectionMenu = (function (){
+
+        
+        var
+        scrollToMenuSection = function(e){
+            
+            var $target = $(e.target.hash);      
+            scrollToTarget($target);
+            
+        },
+ 
+            
+        // throttle function, enforces a minimum time interval
+        throttle = function(fn, interval) {
+            var lastCall, timeoutId;
+            return function () {
+                var now = new Date().getTime();
+                if (lastCall && now < (lastCall + interval) ) {
+                    // if we are inside the interval we wait
+                    clearTimeout(timeoutId);
+                    timeoutId = setTimeout(function () {
+                        lastCall = now;
+                        fn.call();
+                    }, interval - (now - lastCall) );
+                } else {
+                    // otherwise, we directly call the function 
+                    lastCall = now;
+                    fn.call();
+                }
+            };
+        },
+            
+        highlightSectionInMenu = function () {
+  
+            var 
+
+            // cache the navigation links 
+            $navLinks = $(".section-menu a"),
+
+            // cache (in reversed order) the sections
+            $sections = $($(".section-highlight").get().reverse()),
+
+            // map each section id to their corresponding navigation link
+            sectionIdToNavigationLink = {};
+
+            $sections.each(function() {
+                var id = $(this).attr('id');
+                sectionIdToNavigationLink[id] = $(".section-menu a").filter(function(){
+                    return $(this).prop('hash') === "#"+id;
+                });
+            });
+            
+            
+            // get the current vertical position of the scroll bar
+            scrollPosition = $(window).scrollTop();
+
+            // iterate the sections
+            $sections.each(function() {
+                var currentSection = $(this);
+                // get the position of the section
+                var sectionTop = currentSection.offset().top;
+
+                // if the user has scrolled over the top of the section  
+                if (scrollPosition >= sectionTop) {
+                    // get the section id
+                    var id = currentSection.attr('id');
+                    // get the corresponding navigation link
+                    var $navigationLink = sectionIdToNavigationLink[id];
+                    // if the link is not active
+                    if (!$navigationLink.hasClass('active')) {
+                        // remove .active class from all the links
+                        $navLinks.removeClass('active');
+                        // add .active class to the current link
+                        $navigationLink.addClass('active');
+                    }
+                    // we have found our section, so we return false to exit the each loop
+                    return false;
+                }
+            });
+
+        };
+
+        return{
+
+            init: function () {
+
+                $(".section-menu").on("click", "a", scrollToMenuSection);
+                
+                $(window).scroll( throttle(highlightSectionInMenu, 100) );
+
+            }
+
+        };
+
+
+    }());
+
+    return{
+
+        init: function () {
+
+            if ( $(".section-menu").length ) {
+
+                sectionMenu.init();
+
+            }
+
+        }
+
+    };
+
+}());
+
+$(window).on("load", clientname.website.init);
+
+// end scrollTo
+
+
+
+// Whatsapp
+
+var close_button = document.querySelector(".close-button");
+var social_buttons = document.querySelectorAll(".social");
+
+close_button.addEventListener('click',()=>{
+social_buttons.forEach(function(buttons){
+buttons.classList.toggle('hide');
+});
+});
+
