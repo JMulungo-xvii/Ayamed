@@ -9565,3 +9565,7 @@ width: 800px;
   display: none;
   background-color: black
 }
+
+#noticias p:child{
+  color: #fff;
+}
