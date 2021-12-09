@@ -1,0 +1,89 @@
+SECTIO 1 - BANNERS:
+*I. AYAmed
+Mais do que uma clínica de cura,
+Um centro médico de prevenção
+
+Botão: Sobre Nós (Vai dar no “Quem Somos?” - Podes alterar o botão na secção abaixo para “Sobre Nós”)
+
+*II. A Nossa Embaixadora
+Conhece a nossa embaixadora, Sheila Ibrahimo?
+Saiba Mais!
+
+Botão: Instagram | Link: https://www.instagram.com/p/CW_IiFXMWee/?utm_source=ig_web_copy_link
+
+III. Doença Renal Crónica: Factores de risco
+Conhece as causas da doença renal crónica?Siga-nos.
+
+Botão: Facebook
+
+SECTION 2 - Quem Somos? - Alterar botão/title para “Sobre Nós”
+
+Texto:
+
+Não existe maior bênção que a vida e na AyaMed assumimos o compromisso de preservá-la com todos os recursos que temos.
+
+E porque cuidar de si e da sua saúde é a nossa maior prioridade, garantimos que tenha toda a atenção que merece.
+
+Os nossos cuidados abrangem diversas áreas, mas é o serviço permanente e dedicado à hemodiálise que nos destaca, até à data, como o primeiro e único centro especializado de hemodiálise em Moçambique.
+
+Somos mais do que um centro médico, somos um parceiro fiel e um companheiro de todas as horas, para que se sinta hoje, amanhã e sempre seguro e em boas mãos.
+
+
+SECTION 3 - HEMODIÁLISE:
+
+1. Alterar imagem - Sala de Hemodiálise ou Paciente com enfermeira
+
+Texto: 
+
+O serviço de hemodiálise é imperioso para todos os nossos pacientes com doença renal crónica.
+ 
+Cada sessão dura até 4h, tendo início a partir das 05:30h.
+
+Dispomos de uma capacidade máxima até 10 estações a operar em simultâneo na nossa sala topo de gama, com equipamentos da mais alta tecnologia, bem como de assistência médica de uma nefróloga, médico geral a tempo inteiro e consutas especializadas de psicologia para o conforto e bem-estar de cada paciente.
+
+Mais funcionalidades incluem:
+Podes colocar um efeito para apresentar os icons
+(Icon comida ou pratos c/ talheres) Menú incluso
+(Icon Wi-fi) Wi-fi grátis
+(Icon TV) TV Cabo & Netflix
+  
+
+
+SECTION 4 - Consultas:
+I. Deixar apenas especialidades e nomes dos Dr.s em baixo. Podes excluri o campo para textos.
+
+Nefrologia - Dra. Awa Carimo
+Clínica Geral - Dr. Richad Hassam
+Pediatria - Dr. Faiaz Issá
+Psicologia - Dra. Mabel Serra
+
+Ginecologia - Dra. Andreia Neves
+Urulogista - Dra. Yanet Rizo
+Dermatologista - Dr. Leroy Varona
+Nutricionista - Dra. Joelma Carina
+
+
+Mais especialidades:
+I. Iremos passar-te os icons
+Trocar dermatologia (ja tem em cima) por Psiquiatria 
+
+
+SECTION 5 - INSTALAÇÕES (Remover Nossas):
+I. Tirar as descrições, deixar apenas imagens e titles dos espaços
+II. Reorganizar imagens conforme imagens partilhadas no WhatsApp
+
+SECTION 6 - Notícias - Mudar para Redes Sociais:
+I. Facebook (@ayamedmoz) - Colocr post mais recent
+II. Instagram (@ayamedmoz) - Colocar post mais recente
+
+
+
+A cena que tem que tar always on no screen é apenas WhatsApp (Faz como da μtter)
+Link para call deixa apenas no contacto
+
+Horários:
+Segunda - Sexta
+08:00h - 18:00h
+
+Sábado
+08:00h - 14:00h
