@@ -7974,6 +7974,7 @@ h1, h2, h3, h4, h5,
         margin-right: 10px; }
 
 .staff {
+  background: linear-gradient(135deg, #2c464c 0%, #2cbcbc 100%);
   width: 100%;
   display: block;
   padding: 25px;
@@ -7989,22 +7990,26 @@ h1, h2, h3, h4, h5,
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+ }
+
   @media (max-width: 767.98px) {
     .staff {
       margin-bottom: 30px; } }
   .staff .info {
     width: 100%; }
     .staff .info h3 {
-      font-size: 18px; }
-      .staff .info h3 a {
-        color: #000; }
+      font-size: 16px; }
+      .staff .info h3{
+        color: #fff !important;
+
+      font-weight: bold; }
     .staff .info span.position {
       display: block;
       margin-bottom: 15px;
       font-size: 13px;
       font-weight: 400;
-      color: #1c383f; }
+      color: #fff; }
   .staff .img {
     width: 180px;
     height: 180px;
@@ -8027,7 +8032,8 @@ h1, h2, h3, h4, h5,
   .staff:hover, .staff:focus {
     -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5); }
+    box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.5); 
+    transform: scale(1.1);}
     .staff .text p{
       font-size: 0.9rem;
     }
@@ -8479,7 +8485,7 @@ textarea.form-control {
 
 .heading-section h2 {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   background: #1c383f;
   background: -moz-linear-gradient(-45deg, #2f89fc 0%, #2cbcbc 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, #2f89fc), color-stop(100%, #2cbcbc));
@@ -8600,7 +8606,9 @@ textarea.form-control {
         width: 100%;
         margin-bottom: 5px; } }
   .ftco-section .tab-content .tab-pane h2 {
-    font-size: 24px; }
+    font-size: 20px; 
+  color:  #20565d;
+  font-weight: bold;}
   .ftco-section .tab-content .tab-pane .one-forth {
     width: 50%; }
     .ftco-section .tab-content .tab-pane .one-forth img {
@@ -9485,9 +9493,12 @@ body {
 .social {}
 
 .wrapper-sapp a {
-  height: 30px;
-  width: 30px;
-  background: #000;
+   height: 60px;
+  width: 60px; 
+  font-size: 26px;
+  background: linear-gradient(135deg, #217f88 0%, #2cbcbc 100%) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.25); 
   padding: 10px;
   display: flex;
   flex-direction: row;
@@ -9498,6 +9509,8 @@ body {
   color: #fff;
   margin: 2px
 }
+
+
 
 
 
@@ -9564,4 +9577,30 @@ width: 800px;
   right: 20px;
   display: none;
   background-color: black
+}
+
+
+
+
+
+/* icon hemodialise */
+.more .item span {
+  height: 60px;
+  width: 60px; 
+  font-size: 26px;
+  background: linear-gradient(135deg, #217f88 0%, #2cbcbc 100%) !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(120, 213, 239, 0.25); 
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  margin: 2px
+}
+.more .item{
+  font-size: 16px;
 }
