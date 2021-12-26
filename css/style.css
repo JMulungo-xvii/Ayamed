@@ -4,6 +4,9 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ @import url('http://fonts.cdnfonts.com/css/itc-avant-garde-gothic-std-book');
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -31,8 +34,11 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  /* --font-family-sans-serif: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; */
+ }
+
+                
 
 *,
 *::before,
@@ -56,9 +62,9 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 200;
   line-height: 1.5;
   color: #212529;
   text-align: left;
@@ -303,7 +309,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: 'ITC Avant Garde Gothic Std Bold', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: inherit; }
@@ -421,7 +427,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed', sans-serif; }
 
 code {
   font-size: 87.5%;
@@ -4500,7 +4506,7 @@ button.close {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'ITC Avant Garde Gothic Std Extra Light', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4585,7 +4591,7 @@ button.close {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'ITC Avant Garde Gothic Std Extra Light', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7072,7 +7078,7 @@ button.bg-dark:focus {
     margin-left: auto !important; } }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+  font-family: 'ITC Avant Garde Gothic Std Extra Light Condensed', sans-serif; }
 
 .text-justify {
   text-align: justify !important; }
@@ -7274,11 +7280,11 @@ a.text-dark:hover, a.text-dark:focus {
     border: 1px solid #dee2e6 !important; } }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: 'ITC Avant Garde Gothic Std Book', sans-serif;
   background: #fff;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.8;
-  font-weight: 400;
+  font-weight: 100;
   color: #217f88; }
   body.menu-show {
     overflow: hidden;
@@ -8055,7 +8061,7 @@ h1, h2, h3, h4, h5,
   }
   
   .carousel-item img {
-      height: 400px
+      /* height: 400px */
   }
 
   .principal .hemo{
@@ -8347,7 +8353,7 @@ textarea.form-control {
   background: #3c312e; }
 
 .ftco-footer {
-  font-size: 16px;
+  font-size: 15px;
   padding: 6em 0; 
   background: linear-gradient(135deg, #000 0%, #217f88 100%);
 }
@@ -9558,10 +9564,10 @@ color: #fff;
   font-weight: bold;
   color: #fff;
 }
-.space .carousel-item  {
+/* .space .carousel-item  {
   width: 800px;
     height: 550px
-  }
+  } */
 
 .space .carousel-item img {
 width: 800px;
@@ -9652,4 +9658,117 @@ width: 800px;
   align-items: center;}
 .more .item p{
   text-align: center;
+}
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+
+    .owl-carousel.home-slider .slider-item .slider-text h1 {
+      font-size: 22px; }
+      .owl-carousel.home-slider .slider-item .slider-text p {
+        font-size: 17px; }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .owl-carousel.home-slider .slider-item .slider-text h1 {
+      font-size: 22px; }
+      .owl-carousel.home-slider .slider-item .slider-text p {
+        font-size: 17px; }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+}
+
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+   
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+    .owl-carousel.home-slider .slider-item .slider-text h1 {
+      font-size: 22px; }
+      .owl-carousel.home-slider .slider-item .slider-text p {
+        font-size: 17px; }
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+
+}
+
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
 }
